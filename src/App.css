@@ -5,6 +5,12 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  filter: hue-rotate(57deg) saturate(20);
+}
+.App-logo:first-child {
+  position: absolute;
+  filter: hue-rotate(57deg) saturate(20) brightness(5) blur(10px);
+  opacity: 0.5;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,6 +28,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: relative;
 }
 
 .App-link {
